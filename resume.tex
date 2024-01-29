@@ -1,0 +1,236 @@
+%------------------------- Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+  \textbf{\Huge \scshape Ernest Lu} \\ \vspace{1pt}
+  \small 469-235-0075 $|$ \href{mailto:ernest@berkeley.edu}{\underline{ernest@berkeley.edu}} $|$
+  \href{https://www.linkedin.com/in/badint}{\underline{linkedin.com/in/badint}} $|$
+  \href{https://github.com/ernest-lu}{\underline{github.com/ernest-lu}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of California, Berkeley}{Berkeley, CA}
+{Bachelor of Arts in Computer Science}{Aug. 2021 -- May 2025}
+\resumeSubItem
+{Relevant Courses: Algorithms (A+), Data Structures (A+),
+  Discrete Mathematics (A+), Artificial Intelligence (A), SICP (A+), Databases (A),
+  Probability and Random Processes (A), Machine Structures (A), Linear Algebra (A+),
+  Quantum Computing (A), Operating Systems (A), Optimization (A+)}
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Databricks} {San Francisco, CA}
+{Incoming Software Engineering Intern}  {May. 2024 - Aug. 2024}
+
+\resumeSubheading
+{The Voleon Group} {Berkeley, CA}
+{Software Engineering Intern}  {Jan. 2023 - Apr. 2023; Incoming Spring 2025}
+\resumeItemListStart
+\resumeItem{Implemented interpolation of impact model computations that sped up portfolio simulations by upwards of 25\%}
+\resumeItem{Developed timing tools for plotting, comparing, and aggregating components of simulations}
+\resumeItem{Created interfaces and models for functions called millions of times by impact model code}
+\resumeItemListEnd
+
+\resumeSubheading
+{Roblox}{San Mateo, CA}
+{Software Engineering Intern}{May 2022 - Aug. 2022 and May 2023 - Aug. 2023}
+\resumeItemListStart
+\resumeItem{Fixed production search bugs that prevented results from being shown to daily active users}
+\resumeItem{Designed experimentation on search with metrics pipelines and varying search algorithms }
+\resumeItem{Developed automatic prioritization system of Jira tickets created from bugs reported by Roblox creators}
+\resumeItem{Enabled ticket priority to be updated over time using streaming techniques applied to a delayed queue}
+\resumeItem{Worked with Docker, C\#, AWS, Kibana, Airflow, ElasticSearch and Internal Roblox technologies}
+\resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+\resumeSubheading
+{UC Berkeley EECS Department}{Berkeley, CA}
+{Academic Intern, Reader, Tutor}{Feb. 2022 - Dec. 2022}
+\resumeItemListStart
+\resumeItem{Fall 2022 Reader, Spring 2024 Tutor for CS 170: Efficient Algorithms and Intractable Problems}
+\resumeItem{Developed full stack project \underline{\href{https://170-leaderboard.vercel.app/}{leaderboard}} utilized by hundreds of teams to check statuses and update solutions}
+\resumeItem{Taught in twice-a-week discussion sections for Spring 2022 CS 70: Discrete Mathematics and Probability Theory.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\href{https://github.com/ernest-lu/Fifteem/blob/main/projectreflection.pdf}{\underline{\textbf{Fifteem}}} $|$ \emph{Heuristic Optimization Contest; UC Berkeley Algorithms}}{Apr. 2022 - May 2022}
+\resumeItemListStart
+\resumeItem{Implemented approximate solution for an NP-Hard problem based on observations of the recursive and greedy structure of the problem.}
+\resumeItem{Created executable system that was continuously run overnight to update solution outputs}
+\resumeItem{Placed 3rd out of 240 teams that used combinations of computational resources and optimization techniques}
+\resumeItemListEnd
+\resumeProjectHeading
+{\href{https://badimp.vercel.app/}{\underline{\textbf{Badimp}}} $|$ \emph{Algorithms and Data Structures Library}}{Aug. 2022}
+\resumeItemListStart
+\resumeItem{Created website with copy-pastable implementations of competitive programming algorithms and data structures}
+\resumeItem{Wrote and tested algorithms/data structures against extensive list of problems}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Pintos} $|$ \emph{UC Berkeley Operating Systems}}{Sept. 2023 -  Dec. 2023}
+\resumeItemListStart
+\resumeItem{Implemented functioning operating system with additional threading and file system features}
+\resumeItem{Enabled processes to be run with user arguments, create user threads, and traverse file subdirectories}
+\resumeItem{Designed implementation details in a group setting, proposing ideas and giving feedback}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%----- HONORS ------
+\section{Honors}
+\resumeSubHeadingListStart
+\item{}
+\resumeItemListStart
+\resumeItem{USACO Platinum Division}
+\resumeItem{AIME Qualifier (X2)}
+\resumeItem{CodeForces Master Rating (2231)}
+\resumeItem{2nd place - UC Berkeley 2023 ACM-ICPC Team Selection Contest}
+\resumeItem{ACM-ICPC North American Championship Qualifier – UNT Team 1}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%
+%-----------Additional Information-----------
+\section{Additional Information}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+                \textbf{Languages/Frameworks}{: C++, Python, Java, C, SQL, JavaScript, HTML/CSS, MATLAB, React} \\
+                \textbf{Developer Tools}{: Git, Docker, AWS, VS Code, PyCharm, IntelliJ, Eclipse, Vim} \\
+          }}
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
+
