@@ -1,5 +1,5 @@
 %------------------------- Resume in Latex
-% Author : Jake Gutierrez
+% Author : Ernest Lu
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
@@ -111,7 +111,7 @@
 
 \begin{center}
   \textbf{\Huge \scshape Ernest Lu} \\ \vspace{1pt}
-  \small 469-235-0075 $|$ \href{mailto:ernest@berkeley.edu}{\underline{ernest@berkeley.edu}} $|$
+  \small 469-235-0075 $|$ \href{mailto:ernestlu.us@gmail.com}{\underline{ernestlu.us@gmail.com}} $|$
   \href{https://www.linkedin.com/in/badint}{\underline{linkedin.com/in/badint}} $|$
   \href{https://github.com/ernest-lu}{\underline{github.com/ernest-lu}}
 \end{center}
@@ -122,12 +122,12 @@
 \resumeSubHeadingListStart
 \resumeSubheading
 {University of California, Berkeley}{Berkeley, CA}
-{Bachelor of Arts in Computer Science}{Aug. 2021 -- May 2025}
+{Bachelor of Arts in Computer Science}{Aug. 2021 -- Dec. 2024}
 \resumeSubItem
 {Relevant Courses: Algorithms (A+), Data Structures (A+),
-  Discrete Mathematics (A+), Artificial Intelligence (A), SICP (A+), Databases (A),
-  Probability and Random Processes (A), Machine Structures (A), Linear Algebra (A+),
-  Quantum Computing (A), Operating Systems (A), Optimization (A+)}
+  Discrete Mathematics (A+), Artificial Intelligence, SICP (A+), Databases,
+  Probability and Random Processes, Machine Structures, Linear Algebra (A+),
+  Quantum Computing, Operating Systems, Optimization (A+), Abstract Algebra, Compilers, Graphics}
 \resumeSubHeadingListEnd
 
 
@@ -136,15 +136,20 @@
 \resumeSubHeadingListStart
 \resumeSubheading
 {Databricks} {San Francisco, CA}
-{Incoming Software Engineering Intern}  {May. 2024 - Aug. 2024}
+{Software Engineering Intern}  {May. 2024 - Aug. 2024}
+\resumeItemListStart
+\resumeItem{Implemented scaling projects to increase file and notebook limits of Git repositories on Databricks workspace}
+\resumeItem{Developed benchmarks and created metrics for performance and latency of Git operations}
+\resumeItem{Implemented pagination and batching of requests made from Databricks workspace}
+\resumeItemListEnd
 
 \resumeSubheading
 {The Voleon Group} {Berkeley, CA}
 {Software Engineering Intern}  {Jan. 2023 - Apr. 2023; Incoming Spring 2025}
 \resumeItemListStart
-\resumeItem{Implemented interpolation of impact model computations that sped up portfolio simulations by upwards of 25\%}
+\resumeItem{Implemented interpolation of impact model computations that sped up portfolio simulations}
 \resumeItem{Developed timing tools for plotting, comparing, and aggregating components of simulations}
-\resumeItem{Created interfaces and models for functions called millions of times by impact model code}
+\resumeItem{Created interfaces and models for functions called by impact model code}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -154,8 +159,6 @@
 \resumeItem{Fixed production search bugs that prevented results from being shown to daily active users}
 \resumeItem{Designed experimentation on search with metrics pipelines and varying search algorithms }
 \resumeItem{Developed automatic prioritization system of Jira tickets created from bugs reported by Roblox creators}
-\resumeItem{Enabled ticket priority to be updated over time using streaming techniques applied to a delayed queue}
-\resumeItem{Worked with Docker, C\#, AWS, Kibana, Airflow, ElasticSearch and Internal Roblox technologies}
 \resumeItemListEnd
 
 % -----------Multiple Positions Heading-----------
@@ -173,7 +176,7 @@
 {Academic Intern, Reader, Tutor}{Feb. 2022 - Dec. 2022}
 \resumeItemListStart
 \resumeItem{Fall 2022 Reader, Spring 2024 Tutor for CS 170: Efficient Algorithms and Intractable Problems}
-\resumeItem{Developed full stack project \underline{\href{https://170-leaderboard.vercel.app/}{leaderboard}} utilized by hundreds of teams to check statuses and update solutions}
+\resumeItem{Developed project \underline{\href{https://170-leaderboard.vercel.app/}{leaderboard}} utilized by teams to check statuses and update solutions}
 \resumeItem{Taught in twice-a-week discussion sections for Spring 2022 CS 70: Discrete Mathematics and Probability Theory.}
 \resumeItemListEnd
 
@@ -183,6 +186,13 @@
 %-----------PROJECTS-----------
 \section{Projects}
 \resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{DatalogInt} $|$ \emph{UC Berkeley Compiler Optimization}}{Fall 2024}
+\resumeItemListStart
+\resumeItem{Created toy datalog interpreter to optimize bril programs for Compiler Optimization class final project}
+\resumeItem{Implemented semi-naive evaluation of datalog facts and rules to extract out a resulting set of facts and rules}
+\resumeItem{Benchmarked datalog evaluation times and resulting compiler optimizations}
+\resumeItemListEnd
 \resumeProjectHeading
 {\href{https://github.com/ernest-lu/Fifteem/blob/main/projectreflection.pdf}{\underline{\textbf{Fifteem}}} $|$ \emph{Heuristic Optimization Contest; UC Berkeley Algorithms}}{Apr. 2022 - May 2022}
 \resumeItemListStart
@@ -196,14 +206,6 @@
 \resumeItem{Created website with copy-pastable implementations of competitive programming algorithms and data structures}
 \resumeItem{Wrote and tested algorithms/data structures against extensive list of problems}
 \resumeItemListEnd
-
-\resumeProjectHeading
-{\textbf{Pintos} $|$ \emph{UC Berkeley Operating Systems}}{Sept. 2023 -  Dec. 2023}
-\resumeItemListStart
-\resumeItem{Implemented functioning operating system with additional threading and file system features}
-\resumeItem{Enabled processes to be run with user arguments, create user threads, and traverse file subdirectories}
-\resumeItem{Designed implementation details in a group setting, proposing ideas and giving feedback}
-\resumeItemListEnd
 \resumeSubHeadingListEnd
 
 %----- HONORS ------
@@ -211,11 +213,11 @@
 \resumeSubHeadingListStart
 \item{}
 \resumeItemListStart
+\resumeItem{ICPC World Finals Qualifier – UC Berkeley}
 \resumeItem{USACO Platinum Division}
 \resumeItem{AIME Qualifier (X2)}
-\resumeItem{CodeForces Master Rating (2231)}
-\resumeItem{2nd place - UC Berkeley 2023 ACM-ICPC Team Selection Contest}
-\resumeItem{ACM-ICPC North American Championship Qualifier – UNT Team 1}
+\resumeItem{CodeForces Master Rating (2232)}
+\resumeItem{2nd place - UC Berkeley 2023 ICPC Team Selection Contest}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -225,8 +227,7 @@
 \section{Additional Information}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-                \textbf{Languages/Frameworks}{: C++, Python, Java, C, SQL, JavaScript, HTML/CSS, MATLAB, React} \\
-                \textbf{Developer Tools}{: Git, Docker, AWS, VS Code, PyCharm, IntelliJ, Eclipse, Vim} \\
+                \textbf{Languages}{: C++, Python, Java, Rust} \\
           }}
 \end{itemize}
 
